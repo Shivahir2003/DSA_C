@@ -7,13 +7,13 @@
 3. Write a program to determine whether the entered character is vowel or not.
 4. Write a program to determine whether a given number is prime or not.
 ```
-[Solution For Lab 2](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-2)
+[Solution For Lab 2](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_2)
 ```
 5. Write a program to find factorial of a given number using loop.
 6. Write a program to find power of a number using loop.
 7. Write a program to find factors of a given number.
 ```
-[Solution For Lab 3](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-3)
+[Solution For Lab 3](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_3)
 ```
 8. Write a program to calculate the factorial of a given number (using recursion).
 9. Write a program to calculate GCD of given two numbers (using recursion).
@@ -22,7 +22,7 @@
 ```
 <h1>2. LINEAR DATA STRUCTURE : ARRAY</h1>
 
-[Solution For Lab 4](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-4)
+[Solution For Lab 4](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_4)
 ```
 12. Write a program to read and display n numbers using an array.
 13. Write a program to calculate sum of numbers from m to n.
@@ -30,14 +30,14 @@
 15. Write a program to find position of the smallest number from given n numbers.
 16. Write a program to find whether the array contains a duplicate number or not.
 ```
-[Solution For Lab 5](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-5)
+[Solution For Lab 5](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_5)
 ```
 17. Write a program to insert a number at a given location in an array.
 18. Write a program to delete a number from a given location in an array.
 19. Write a program to insert a number in an array that is already sorted in an ascending order.
 20. Write a program to delete a number from an array that is already sorted in an ascending order.
 ```
-[Solution For Lab 6](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-6)
+[Solution For Lab 6](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_6)
 ```
 21. Write a program to merge two unsorted arrays.
 22. Write a program to read and display a 3X3 Matrix.
@@ -46,7 +46,7 @@
 ```
 <h1>3. LINEAR DATA STRUCTURE : STACK</h1>
 
-[Solution For Lab 7](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-7)
+[Solution For Lab 7](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_7)
 ```
 25. Write algorithms to perform following operations on a stack:
     i. Push
@@ -70,12 +70,12 @@
     iii. Peep
     iv. Change
 ```
-[Solution For Lab 8](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-8)
+[Solution For Lab 8](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_8)
 ```
 28. Show the process of reversing the list of given numbers {12, 34, 78, 23, 90, 67} using stack.
 29. Write a program to reverse the list of given numbers using stack.
 ```
-[Solution For Lab 9](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-9)
+[Solution For Lab 9](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_9)
 ```
 30. Write an algorithm to convert an infix expression into its equivalent postfix expression.
 31. Convert the following infix expressions into postfix expressions:
@@ -86,7 +86,7 @@
     ii. (a + b ^ c ^ d) * ( e + f / d )
 33. Write a program to convert an infix expression into its equivalent postfix expression.
 ```
-[Solution For Lab 10](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-10)
+[Solution For Lab 10](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_10)
 ```
 34. Write an algorithm to evaluate given postfix expression.
 35. Evaluate the following expressions showing every status of stack in tabular form:
@@ -101,7 +101,7 @@
 ```
 <h1>4. LINEAR DATA STRUCTURE : QUEUE</h1>
 
-[Solution For Lab 11](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-11)
+[Solution For Lab 11](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_11)
 ```
 40. Write algorithms to perform following operations on a simple queue:
     i. Insert
@@ -119,7 +119,7 @@
     ii. Delete
     iii. Display
 ```
-[Solution For Lab 12](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-12)
+[Solution For Lab 12](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_12)
 ```
 43. Write algorithms to perform following operations on a circular queue:
     i. Insert
@@ -135,7 +135,7 @@
     ii) Delete
     iii) Display
 ```
-[Solution For Lab 13](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-13)
+[Solution For Lab 13](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_13)
 ```
 46. Explain following functions for dynamic memory allocation:
     i. Malloc()
@@ -145,11 +145,11 @@
 47. Write a program to get n elements of an array from user and print those elements using pointer.
 48. Write a program to display n elements and sum of those elements using dynamic memory allocation. Also release the memory occupied after displaying.
 ```
-[Solution For Lab 14](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-14)
+[Solution For Lab 14](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_14)
 ```
 49. Implement a program to create a node for singly linked list. Read the data in a node then print the node and release the memory of the node.
 ```
-[Solution For Lab 15](https://github.com/Shivahir2003/DSA_C/tree/main/Solution/Lab-15)
+[Solution For Lab 15](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_15)
 ```
 50. Write algorithms to implement following operations on the singly linked list:
     i. Insert a node at the end of the list
