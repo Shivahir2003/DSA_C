@@ -1,0 +1,32 @@
+43. Write algorithms to perform following operations on a circular queue:
+i. Insert
+ii. Delete
+
+1. Insert
+    -reset rare 
+    if rare = size
+    rare = 1
+    else
+    rare = rare + 1
+    -overflow
+    if front = rare
+    print overflow
+    -insert
+    queue[rare] = item
+    -if front set proper
+    if front = 0
+    front = 1
+2. Delete   
+    -underflow
+    if front = 0
+    print underflow
+    -delete
+    item = queue[front]
+    -reset front
+    if front = rare
+    front = 0
+    else
+    front = front + 1
+    -return item
+    
+

@@ -1,0 +1,21 @@
+36. Write an algorithm to evaluate given prefix expression.
+
+1. [Initialize stack]
+  TOP <- 0
+  VALUE <- 0
+
+2.[Read the prefix expression]
+  Repeat from last character up to first character
+    TEMP <- NEXTCHAR (PREFIX)
+    If TEMP is an operand
+      Push TEMP onto stack
+    Else
+      OPERAND1 <- POP
+      OPERAND2 <- POP
+      VALUE <- EVALUATE (OPERAND1, OPERAND2, TEMP)
+      Push VALUE onto stack
+
+3. [Print the result]
+    VALUE <- POP
+    Print VALUE
+    Exit

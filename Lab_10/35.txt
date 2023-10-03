@@ -1,0 +1,102 @@
+Evaluate the following expressions showing every status of stack in tabular form:
+
+Given postfix expression: 5, 4, 6, +, *, 4, 9, 3, /, +, *
+
+1. Operand: 5
+   - Push 5 onto the stack: Stack = [5]
+
+2. Operand: 4
+   - Push 4 onto the stack: Stack = [5, 4]
+
+3. Operand: 6
+   - Push 6 onto the stack: Stack = [5, 4, 6]
+
+4. Operator: +
+   - Pop two operands from the stack (6 and 4).
+   - Add them: 6 + 4 = 10
+   - Push the result (10) onto the stack: Stack = [5, 10]
+
+5. Operator: *
+   - Pop two operands from the stack (10 and 5).
+   - Multiply them: 10 * 5 = 50
+   - Push the result (50) onto the stack: Stack = [50]
+
+6. Operand: 4
+   - Push 4 onto the stack: Stack = [50, 4]
+
+7. Operand: 9
+   - Push 9 onto the stack: Stack = [50, 4, 9]
+
+8. Operand: 3
+   - Push 3 onto the stack: Stack = [50, 4, 9, 3]
+
+9. Operator: /
+   - Pop two operands from the stack (3 and 9).
+   - Divide them: 9 / 3 = 3
+   - Push the result (3) onto the stack: Stack = [50, 4, 3]
+
+10. Operator: +
+    - Pop two operands from the stack (3 and 4).
+    - Add them: 3 + 4 = 7
+    - Push the result (7) onto the stack: Stack = [50, 7]
+
+11. Operator: *
+    - Pop two operands from the stack (7 and 50).
+    - Multiply them: 7 * 50 = 350
+    - Push the result (350) onto the stack: Stack = [350]
+
+So, the evaluated value of the postfix expression is 350.
+
+
+---------------------------------------------------------------
+
+
+Given postfix expression: 7, 5, 2, +, *, 4, 1, 1, +, /, -
+
+
+1. Operand: 7
+   - Push 7 onto the stack: Stack = [7]
+
+2. Operand: 5
+   - Push 5 onto the stack: Stack = [7, 5]
+
+3. Operand: 2
+   - Push 2 onto the stack: Stack = [7, 5, 2]
+
+4. Operator: +
+   - Pop two operands from the stack (2 and 5).
+   - Add them: 5 + 2 = 7
+   - Push the result (7) onto the stack: Stack = [7, 7]
+
+5. Operator: *
+   - Pop two operands from the stack (7 and 7).
+   - Multiply them: 7 * 7 = 49
+   - Push the result (49) onto the stack: Stack = [49]
+
+6. Operand: 4
+   - Push 4 onto the stack: Stack = [49, 4]
+
+7. Operand: 1
+   - Push 1 onto the stack: Stack = [49, 4, 1]
+
+8. Operand: 1
+   - Push 1 onto the stack: Stack = [49, 4, 1, 1]
+
+9. Operator: +
+   - Pop two operands from the stack (1 and 1).
+   - Add them: 1 + 1 = 2
+   - Push the result (2) onto the stack: Stack = [49, 4, 2]
+
+10. Operator: /
+    - Pop two operands from the stack (2 and 4).
+    - Divide them: 4 / 2 = 2
+    - Push the result (2) onto the stack: Stack = [49, 2]
+
+11. Operator: -
+    - Pop two operands from the stack (2 and 49).
+    - Subtract them: 49 - 2 = 47
+    - Push the result (47) onto the stack: Stack = [47]
+
+So, the evaluated value of the given postfix expression is 47.
+
+

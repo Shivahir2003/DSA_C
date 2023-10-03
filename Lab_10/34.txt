@@ -1,0 +1,22 @@
+34. Write an algorithm to evaluate given postfix expression.
+
+
+1.[Initialize Stack]
+  TOP <- 0
+  VALUE <- 0
+
+2.[Read the postfix expression]
+  Repeat until last character of postfix expression
+    TEMP <- NEXTCHAR (POSTFIX)
+    If TEMP is an operand
+      Push TEMP onto STACK
+    Else
+      OPERAND2 <- POP STACK
+      OPERAND1 <- POP STACK
+      VALUE <- EVALUATE (OPERAND1, OPERAND2, TEMP)
+      Push VALUE onto STACK
+
+3.[Pop the stack and print the result]
+    VALUE <- POP STACK
+    Print VALUE
+    Exit

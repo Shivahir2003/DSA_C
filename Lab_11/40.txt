@@ -1,0 +1,19 @@
+40. Write algorithms to perform following operations on a simple queue:
+i. Insert
+ii. Delete
+
+1. check if queue is full
+  if rare == size - 1
+    return overflow
+  else if front == -1
+    front = 0
+  rare = rare + 1
+  queue[rare] = item
+
+2. check if queue is empty
+  if front == -1 || front > rare
+    return underflow
+  else
+    item = queue[front]
+    front = front + 1
+    return item

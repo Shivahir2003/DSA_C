@@ -1,0 +1,281 @@
+
+(A+B*C/D-E+F/G/(H+I))
+1. Given infix expression: 
+```
+A + B * C / D - E + F / G / ( H + I )
+```
+
+Step 1:
+Expression: A + B * C / D - E + F / G / ( H + I )
+operator_stack: []
+postfix_output: []
+
+Step 2:
+- Read 'A' (operand), add it to the postfix_output.
+Expression: + B * C / D - E + F / G / ( H + I )
+operator_stack: []
+postfix_output: A
+
+Step 3:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: B * C / D - E + F / G / ( H + I )
+operator_stack: [+]
+postfix_output: A
+
+Step 4:
+- Read 'B' (operand), add it to the postfix_output.
+Expression: * C / D - E + F / G / ( H + I )
+operator_stack: [+]
+postfix_output: A B
+
+Step 5:
+- Read '*' (operator), push it onto the operator_stack.
+Expression: C / D - E + F / G / ( H + I )
+operator_stack: [+, *]
+postfix_output: A B
+
+Step 6:
+- Read 'C' (operand), add it to the postfix_output.
+Expression: / D - E + F / G / ( H + I )
+operator_stack: [+, *]
+postfix_output: A B C
+
+Step 7:
+- Read '/' (operator), push it onto the operator_stack.
+Expression: D - E + F / G / ( H + I )
+operator_stack: [+, /]
+postfix_output: A B C *
+
+Step 8:
+- Read 'D' (operand), add it to the postfix_output.
+Expression: - E + F / G / ( H + I )
+operator_stack: [+, /]
+postfix_output: A B C * D
+
+Step 9:
+- Read '-' (operator), push it onto the operator_stack.
+Expression: E + F / G / ( H + I )
+operator_stack: [-]
+postfix_output: A B C * D / + 
+
+Step 10:
+- Read 'E' (operand), add it to the postfix_output.
+Expression: + F / G / ( H + I )
+operator_stack: [-]
+postfix_output: A B C * D / + E
+
+Step 11:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: F / G / ( H + I )
+operator_stack: [+]
+postfix_output: A B C * D / + E -
+
+Step 12:
+- Read 'F' (operand), add it to the postfix_output.
+Expression: / G / ( H + I )
+operator_stack: [+]
+postfix_output: A B C * D / + E - F
+
+Step 13:
+- Read '/' (operator), push it onto the operator_stack.
+Expression: G / ( H + I )
+operator_stack: [+, /]
+postfix_output: A B C * D / + E - F
+
+Step 14:
+- Read 'G' (operand), add it to the postfix_output.
+Expression: / ( H + I )
+operator_stack: [+, /]
+postfix_output: A B C * D / + E - F G
+
+Step 15:
+- Read '/' (operator), push it onto the operator_stack.
+Expression: ( H + I )
+operator_stack: [+, /]
+postfix_output: A B C * D / + E - F G /
+
+Step 16:
+- Read '(' (open parenthesis), push it onto the operator_stack.
+Expression: H + I )
+operator_stack: [+, /, (]
+postfix_output: A B C * D / + E - F G /
+
+Step 17:
+- Read 'H' (operand), add it to the postfix_output.
+Expression: + I )
+operator_stack: [+, /, (]
+postfix_output: A B C * D / + E - F G / H
+
+Step 18:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: I )
+operator_stack: [+, /, (, +]
+postfix_output: A B C * D / + E - F G / H
+
+Step 19:
+- Read 'I' (operand), add it to the postfix_output.
+Expression: )
+operator_stack: [+, /, (, +]
+postfix_output: A B C * D / + E - F G / H I
+
+Step 20:
+- Read ')' (closing parenthesis), pop operators from the operator_stack and add them to the postfix_output until an open parenthesis "(" is encountered. Then, discard the open parenthesis.
+Expression: 
+operator_stack: [+, /]
+postfix_output: A B C * D / + E - F G / H I +
+
+Step 21:
+- Pop the remaining operators from the operator_stack and add them to the postfix_output.
+Expression: 
+operator_stack: [+]
+postfix_output: A B C * D / + E - F G / H I + / 
+
+Step 22:
+Expression is fully scanned. Pop any remaining operators from the operator_stack and add them to the postfix_output (if any).
+Expression: 
+operator_stack: []
+postfix_output: A B C * D / + E - F G / H I + / +
+
+
+
+The final postfix expression is: 
+```
+A B C * D / + E - F G / H I + / +   
+```
+
+
+2. Given infix expression: 
+```
+( A + B ) * C + D / ( B + A * C ) + D
+```
+
+
+Step 1:
+Expression: ( A + B ) * C + D / ( B + A * C ) + D
+operator_stack: []
+postfix_output: 
+
+Step 2:
+- Read '(' (open parenthesis), push it onto the operator_stack.
+Expression: A + B ) * C + D / ( B + A * C ) + D
+operator_stack: [(]
+postfix_output: 
+
+Step 3:
+- Read 'A' (operand), add it to the postfix_output.
+Expression: + B ) * C + D / ( B + A * C ) + D
+operator_stack: [(]
+postfix_output: A
+
+Step 4:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: B ) * C + D / ( B + A * C ) + D
+operator_stack: [(, +]
+postfix_output: A
+
+Step 5:
+- Read 'B' (operand), add it to the postfix_output.
+Expression: ) * C + D / ( B + A * C ) + D
+operator_stack: [(, +]
+postfix_output: A B
+
+Step 6:
+- Read ')' (closing parenthesis), pop operators from the operator_stack and add them to the postfix_output until an open parenthesis "(" is encountered. Then, discard the open parenthesis.
+Expression: * C + D / ( B + A * C ) + D
+operator_stack: []
+postfix_output: A B +
+
+Step 7:
+- Read '*' (operator), push it onto the operator_stack.
+Expression: C + D / ( B + A * C ) + D
+operator_stack: [*]
+postfix_output: A B +
+
+Step 8:
+- Read 'C' (operand), add it to the postfix_output.
+Expression: + D / ( B + A * C ) + D
+operator_stack: [*]
+postfix_output: A B + C
+
+Step 9:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: D / ( B + A * C ) + D
+operator_stack: [+]
+postfix_output: A B + C *
+
+Step 10:
+- Read 'D' (operand), add it to the postfix_output.
+Expression: / ( B + A * C ) + D
+operator_stack: [+]
+postfix_output: A B + C * D
+
+Step 11:
+- Read '/' (operator), push it onto the operator_stack.
+Expression: ( B + A * C ) + D
+operator_stack: [+, /]
+postfix_output: A B + C * D
+
+Step 12:
+- Read '(' (open parenthesis), push it onto the operator_stack.
+Expression: B + A * C ) + D
+operator_stack: [+, /, (]
+postfix_output: A B + C * D 
+
+Step 13:
+- Read 'B' (operand), add it to the postfix_output.
+Expression: + A * C ) + D
+operator_stack: [+, /, (]
+postfix_output: A B + C * D B
+
+Step 14:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: A * C ) + D
+operator_stack: [+, /, (, +]
+postfix_output: A B + C * D B
+
+Step 15:
+- Read 'A' (operand), add it to the postfix_output.
+Expression: * C ) + D
+operator_stack: [+, /, (, +]
+postfix_output: A B + C * D B A
+
+Step 16:
+- Read '*' (operator), push it onto the operator_stack.
+Expression: C ) + D
+operator_stack: [+, /, (, +, *]
+postfix_output: A B + C * D B A
+
+Step 17:
+- Read 'C' (operand), add it to the postfix_output.
+Expression: ) + D
+operator_stack: [+, /, (, +, *]
+postfix_output: A B + C * D B A C
+
+Step 18:
+- Read ')' (closing parenthesis), pop operators from the operator_stack and add them to the postfix_output until an open parenthesis "(" is encountered. Then, discard the open parenthesis.
+Expression: + D
+operator_stack: [+, /]
+postfix_output: A B + C * D B A C * +
+
+Step 19:
+- Read '+' (operator), push it onto the operator_stack.
+Expression: D
+operator_stack: [+]
+postfix_output: A B + C * D B A C * + / +
+
+Step 20:
+- Read 'D' (operand), add it to the postfix_output.
+Expression: 
+operator_stack: [+]
+postfix_output: A B + C * D B A C * + / + D
+
+Step 21:
+Expression is fully scanned. Pop any remaining operators from the operator_stack and add them to the postfix_output (if any).
+Expression: 
+operator_stack: []
+postfix_output: A B + C * D B A C * + / + D +
+
+The final postfix expression is: 
+```
+A B + C * D B A C * + / + D +
+```

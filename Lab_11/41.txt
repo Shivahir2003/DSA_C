@@ -1,0 +1,24 @@
+41. Perform following operations on queue with size 4 & draw queue after each operation :
+i. Insert ‘A’
+ii. Insert ‘B’
+iii. Insert ‘C’
+iv. Delete
+v. Delete
+vi. Insert ‘D’
+vii. Insert ‘E’
+
+
+step 1: Insert ‘A’
+A,_,_,_
+step 2: Insert ‘B’
+A,B,_,_
+step 3: Insert ‘C’
+A,B,C,_
+step 4: Delete
+_,B,C,_
+step 5: Delete
+_,_,C,_
+step 6: Insert ‘D’
+_,_,C,D
+step 7: Insert ‘E’
+oberflow

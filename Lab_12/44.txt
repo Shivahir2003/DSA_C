@@ -1,0 +1,17 @@
+Consider the following circular queue having 6 memory cells. Front=2, Rear=4 Queue: _, A, C, D, _, _. Describe queue as following operation take place:
+i. F is added to the queue
+ii. Two letters are deleted
+iii. R is added to the queue
+iv. S is added to the queue
+v. One letter is deleted
+
+step 1: F is added to the queue
+_, A, C, D, F, _
+step 2: Two letters are deleted
+_, _, _, D, F, _
+step 3: R is added to the queue
+_, _, _, D, F, R
+step 4: S is added to the queue
+S, _, _, D, F, R
+step 5: One letter is deleted
+S, _, _, _, F, R

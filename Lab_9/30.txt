@@ -1,0 +1,11 @@
+1.print oprand as they arrive
+2.if stack is empty or contains a left paranthesis on top,push the incoming oprater on to stack
+3.if incoming symbol is '(' push it onto stack
+4.if incoming symbol is ')' pop ther stack & print the opraters until left paranthesis is found.
+5.if incoming symbol has higher preccedence than the top of the stack, push it on the stack.
+6. if incoming symbol has lower preccedence than the top of the stack, pop & print the top. then test the incoming oprator against the new top of the stack
+7.if incomming oprater has equal preccedence with the top of stack , use associativity.
+8.at the end of the expression, pop & print all opraters of stack.
+
+->associativity L to R then pop & print the top of the stack & then push the incoming oprater.
+-> R to L then push the icoming oprater.
