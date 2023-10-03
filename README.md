@@ -1,7 +1,6 @@
 <h1>1. INTRODUCTION</h1>
 
 [Solution For Lab 1](https://github.com/Shivahir2003/DSA_C/tree/main/Lab_1)
-
 ```
 1. Write a program to calculate area of a Circle.
 2. Write a programto find whether a number is odd or even.
