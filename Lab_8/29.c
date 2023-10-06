@@ -1,8 +1,8 @@
 // 29. Write a program to reverse the list of given numbers using stack.
 
 #include<stdio.h>   
-#define n 100
-int stack[n];
+#define N 100
+int stack[N];
 int top = -1;
 
 // Here in push we don't check the overflow condition because here we know the actual size of the stack.
